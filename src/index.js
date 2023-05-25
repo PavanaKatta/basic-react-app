@@ -1,8 +1,15 @@
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './main-page';
-import registerServiceWorker from './registerServiceWorker';
+import React, { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+import App from './main-page';
+
+const rootElement = document.getElementById('root');
+const root = createRoot(rootElement);
+
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);

@@ -9,7 +9,7 @@ let src = 'Src1';
 export default function App() {
   return (
     <div className="container">
-      <Header />
+      <Header subTitle="Providing houses all over the world" title="logo" />
     </div>
   );
 }
